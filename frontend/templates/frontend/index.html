@@ -4,13 +4,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Django REST with React</title>
+  <title>Chat Application - Frest - Bootstrap HTML admin template</title>
+  <link rel="apple-touch-icon" href="{% static "lib//app-assets/images/ico/apple-icon-120.png" %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static "lib/app-assets/images/ico/favicon.ico" %}">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+
+  <!-- BEGIN: Vendor CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static "lib/app-assets/vendors/css/vendors.min.css" %}">
+  <!-- END: Vendor CSS-->
+
+  <!-- BEGIN: Theme CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static "lib/app-assets/css/bootstrap.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "lib/app-assets/css/bootstrap-extended.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "lib/app-assets/css/colors.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "lib/app-assets/css/components.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "lib/app-assets/css/themes/dark-layout.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "lib/app-assets/css/themes/semi-dark-layout.css" %}">
+  <!-- END: Theme CSS-->
+
+  <!-- BEGIN: Page CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static "lib/app-assets/css/core/menu/menu-types/vertical-menu.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "lib/app-assets/css/pages/app-chat.css" %}">
+  <!-- END: Page CSS-->
+
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static "lib/assets/css/style.css" %}">
+  <!-- END: Custom CSS-->
 </head>
-<body>
+<body class="vertical-layout vertical-menu-modern semi-dark-layout content-left-sidebar chat-application navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="content-left-sidebar" data-layout="semi-dark-layout">
 <div id="app">
     <!-- React will load here -->
 </div>
+<script src="{% static "frontend/main.js" %}"></script>
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="{% static "lib/app-assets/vendors/js/vendors.min.js" %}"></script>
+    <script src="{% static "lib/app-assets/fonts/LivIconsEvo/js/LivIconsEvo.tools.js" %}"></script>
+    <script src="{% static "lib/app-assets/fonts/LivIconsEvo/js/LivIconsEvo.defaults.js" %}"></script>
+    <script src="{% static "lib/app-assets/fonts/LivIconsEvo/js/LivIconsEvo.min.js" %}"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="{% static "lib/app-assets/js/scripts/configs/vertical-menu-dark.js" %}"></script>
+    <script src="{% static "lib/app-assets/js/core/app-menu.js" %}"></script>
+    <script src="{% static "lib/app-assets/js/core/app.js" %}"></script>
+    <script src="{% static "lib/app-assets/js/scripts/components.js" %}"></script>
+    <script src="{% static "lib/app-assets/js/scripts/footer.js" %}"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="{% static "lib/app-assets/js/scripts/pages/app-chat.js" %}"></script>
+    <!-- END: Page JS-->
 </body>
 
-<script src="{% static "frontend/main.js" %}"></script>
+
 </html>
